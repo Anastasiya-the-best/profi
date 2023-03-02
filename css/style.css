@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* подключение шрифтов */
+@font-face{
+    font-family: "Roboto Condensed";
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    /* начертание шрифта: курсив, жирный */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Roboto Condensed";
+    src: url(../fonts/RobotoCondensed-Bold.ttf);
+    /* начертание шрифта: курсив, жирный */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: "PTSans";
+    src: url(../fonts/PTSans-Regular.ttf);
+    /* начертание шрифта: курсив, жирный */
+    font-weight: normal;
+    font-style: normal;
+}
+/* подключение цветов */
+:root{
+    --index: calc(1vw + 1vh);
+    --main-color: #2C5A1E;
+    --secondary-color:#FACA9E;
+    --primery-color:#EEF2F4;
+    --text-color:#000;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+body{
+  font-family: "Roboto Condensed" , Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height:24px;
+  color: var(--text-color);
+}
+h1{ 
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--text-color);
+}
+h2{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--text-color);
+}
+h3{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    width: 100%;
+    background: var(--primery-color);    
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li {
+    margin: 0 0.4vw;
+}
+.header-inner a{
+    color: var(--text-color);
+    font-size: 24px;
+    font-family:"Roboto Condensed" , Arial, Helvetica, sans-serif;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.hamb-menu{
+    display: none;
+}
+
+/* promo */
+
+.promo{
+    background: #ddd url(../img/bg.png) no-repeat 0 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.promo-inner{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 680px; */
+    height: 90vh;
+}
+.promo h1{
+    font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 85.69%;
+text-align: center;
+color: var(--text-color);
+width: 760px;
+margin-bottom: 30px ;
+} 
+.promo h3{
+    font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+color: #000000;
+margin-top: 10px ;
+}
+.btn-cta{
+width: 334px;
+height: 46px;
+line-height: 46px;
+background: var(--main-color);
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 24px; 
+/* secondary */
+color: var(--primery-color);
+text-align: center; 
+margin-top: 20px ;
+}
+/* services */
+.services{
+    border: 1px solid red;
+    margin-top: calc(var(--index) * 2);
+}
+.services-list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.service{
+    flex: 1 1 28%;
+    max-width: 418px;
+    min-width: 300px;
+    height: calc(var(--index)*10);
+    /* border: 1px solid red; */
+    min-height: 210px;
+    position: relative;
+    background-color: rgba(248, 248, 248, 0.93);
+    padding: 10px;
+    overflow: hidden;
+    transition: 1s;
+    margin-bottom: calc(var(--index) * 1); 
+}
+.svg-icon{
+    width: 60px;
+    height: 40px;
+    align-self: flex-end;
+}
+.svg-icon path {
+    fill:var(--main-color);
+}
+.service-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-h3{
+    color: var(--main-color);
+}
+.service-title{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.service:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+    font-size: 0;
+}
+.service:hover .service-title {
+    opacity: 0;
+    transition: 1s;
+}
+.service:hover .service-img {
+    transform: scale(2);
+}
+
+
+
+
+
+
