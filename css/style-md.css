@@ -32,8 +32,8 @@
        right: 10px;
        top: 10px;
        display: block;
-   }
-   .hamp-item{
+    }
+    .hamp-item{
        position: absolute;
        width: 24px;
        height: 2px;
@@ -41,51 +41,51 @@
        left: calc(50% - 12px);
        transition: 0.5s;
        transform-origin: 50% 50%;
-   }
-   .hamp-item-1{
+    }
+    .hamp-item-1{
        top: 7px;            
-   }
-   .hamp-item-2{
+    }
+    .hamp-item-2{
        top: 12px;
-   }
-   .hamp-item-3{
+    }
+    .hamp-item-3{
        top: 17px;
-   }
-   .hamb-menu:hover .hamp-item-1{
+    }
+    .hamb-menu:hover .hamp-item-1{
        transform: rotate(45deg);
        /* left: calc(50% - 12px); */
        top: calc(50%);
-   }
-   .hamb-menu:hover .hamp-item-3{
+    }
+    .hamb-menu:hover .hamp-item-3{
        transform: rotate(-45deg);
        /* left: calc(50% -12px); */
        top: calc(50%);
-   }
-   .hamb-menu:hover .hamp-item-2{
+    }
+    .hamb-menu:hover .hamp-item-2{
        transform: scale(0)
-   }   
-   
-   .contact{
-    margin-right: 55px;
-   }
-.promo h1{
-    line-height: 2rem;
-    max-width: 760px;
-    width: auto;
-    font-size: 2rem;
+    }   
+    .contact{
+        margin-right: 55px;
+    }
+    .promo h1{
+        line-height: 2rem;
+        max-width: 760px;
+        width: auto;
+        font-size: 2rem;
     } 
-.promo h3{
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-    text-align: center;
-    line-height: 1.4rem;
-    margin-top: 1rem;
+    .promo h3{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        line-height: 1.4rem;
+        margin-top: 1rem;
     }
     .btn-cta{
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.1rem; 
-    text-align: center; 
-    margin-top: 1.4rem;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.1rem; 
+        text-align: center; 
+        margin-top: 1.4rem;
     }
+   
 }
